@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0e14"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.15"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1f2c3d" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <circle cx="980" cy="180" r="4" fill="#4fd1e5"/>
+  <circle cx="1060" cy="260" r="4" fill="#4fd1e5"/>
+  <circle cx="900" cy="300" r="4" fill="#4fd1e5"/>
+  <line x1="980" y1="180" x2="1060" y2="260" stroke="#2a3b52" stroke-width="2"/>
+  <line x1="980" y1="180" x2="900" y2="300" stroke="#2a3b52" stroke-width="2"/>
+  <text x="90" y="270" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#eef2f7">Mohammed Walid Ibrahim El-Henawi</text>
+  <text x="90" y="330" font-family="monospace" font-size="30" fill="#4fd1e5">Cybersecurity Student | Aspiring SOC Analyst | Networking &amp; IT</text>
+  <text x="90" y="400" font-family="Arial, sans-serif" font-size="24" fill="#93a3ba">Security Operations · Incident Response · Networking · Software Projects</text>
+</svg>

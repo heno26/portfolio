@@ -1,0 +1,85 @@
+// status: "practicing" (regular working knowledge) or "learning" (actively
+// being learned through labs/coursework, not yet a settled strength).
+export const skillCategories = [
+  {
+    id: "security",
+    label: "Security",
+    skills: [
+      { name: "Cybersecurity Fundamentals", status: "practicing" },
+      { name: "Incident Response Fundamentals", status: "practicing" },
+      { name: "Network Security", status: "practicing" },
+      { name: "Security Operations Concepts", status: "practicing" },
+      { name: "Wireshark", status: "learning" },
+      { name: "Nmap", status: "learning" },
+      { name: "Splunk", status: "learning" },
+      { name: "Wazuh", status: "learning" },
+      { name: "Burp Suite", status: "learning" },
+      { name: "Metasploit", status: "learning" },
+    ],
+  },
+  {
+    id: "networking",
+    label: "Networking",
+    skills: [
+      { name: "TCP/IP", status: "practicing" },
+      { name: "OSI Model", status: "practicing" },
+      { name: "VLANs", status: "practicing" },
+      { name: "Trunking", status: "practicing" },
+      { name: "Routing", status: "practicing" },
+      { name: "Static Routing", status: "practicing" },
+      { name: "DHCP", status: "practicing" },
+      { name: "DNS", status: "practicing" },
+      { name: "NAT / PAT", status: "practicing" },
+      { name: "Subnetting", status: "practicing" },
+      { name: "VLSM", status: "practicing" },
+      { name: "Cisco Packet Tracer", status: "practicing" },
+    ],
+  },
+  {
+    id: "systems",
+    label: "Systems",
+    skills: [
+      { name: "Linux", status: "practicing" },
+      { name: "Windows", status: "practicing" },
+      { name: "VMware", status: "practicing" },
+      { name: "VirtualBox", status: "practicing" },
+    ],
+  },
+  {
+    id: "programming",
+    label: "Programming",
+    skills: [
+      { name: "Python", status: "practicing" },
+      { name: "Java", status: "practicing" },
+      { name: "JavaScript", status: "practicing" },
+      { name: "HTML", status: "practicing" },
+      { name: "CSS", status: "practicing" },
+    ],
+  },
+  {
+    id: "web",
+    label: "Web / App Development",
+    skills: [
+      { name: "React", status: "practicing" },
+      { name: "Vite", status: "practicing" },
+      { name: "React Router", status: "practicing" },
+      { name: "TanStack Query", status: "practicing" },
+      { name: "React Hook Form", status: "practicing" },
+      { name: "Zod", status: "practicing" },
+      { name: "Recharts", status: "practicing" },
+      { name: "LocalStorage", status: "practicing" },
+      { name: "Git", status: "practicing" },
+      { name: "GitHub", status: "practicing" },
+    ],
+  },
+  {
+    id: "backend",
+    label: "Backend / Database Architecture",
+    skills: [
+      { name: "Supabase Architecture", status: "learning" },
+      { name: "PostgreSQL", status: "learning" },
+      { name: "Row Level Security Concepts", status: "learning" },
+      { name: "RPC / Edge Function Concepts", status: "learning" },
+    ],
+  },
+];

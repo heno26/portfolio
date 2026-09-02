@@ -1,0 +1,104 @@
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.filter-chip {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard);
+}
+
+.filter-chip:hover {
+  border-color: var(--color-accent-border);
+  color: var(--color-text-primary);
+}
+
+.filter-chip.is-active {
+  background: var(--color-accent-dim);
+  border-color: var(--color-accent-border);
+  color: var(--color-accent-strong);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.project-empty {
+  color: var(--color-text-muted);
+  padding: 24px 0;
+}
+
+.project-progression {
+  border-top: 1px solid var(--color-border);
+  padding-top: 40px;
+}
+
+.progression-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 22px;
+}
+
+.progression-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.progression-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.progression-list li:last-child {
+  border-bottom: none;
+}
+
+.progression-name {
+  flex-shrink: 0;
+  width: 220px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+}
+
+.progression-note {
+  color: var(--color-text-secondary);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .progression-list li {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .progression-name {
+    width: auto;
+  }
+}

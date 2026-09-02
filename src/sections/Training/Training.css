@@ -1,0 +1,120 @@
+.training-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.training-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.training-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.training-org {
+  font-size: 0.78rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.training-title {
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.training-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.journey-block {
+  margin-bottom: 56px;
+}
+
+.journey-title,
+.learning-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.journey-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  align-items: center;
+}
+
+.journey-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 10px 0;
+}
+
+.journey-list li:not(:last-child)::after {
+  content: "→";
+  color: var(--color-text-muted);
+  margin-left: 16px;
+}
+
+.journey-index {
+  font-size: 0.72rem;
+  color: var(--color-accent);
+}
+
+.journey-label {
+  font-size: 0.88rem;
+  color: var(--color-text-primary);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+}
+
+.learning-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.learning-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 0.88rem;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 800px) {
+  .training-list {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .journey-list li:not(:last-child)::after {
+    content: "↓";
+    position: absolute;
+  }
+}

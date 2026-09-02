@@ -1,0 +1,89 @@
+/*
+  Design direction: "Operations room, not hacker den."
+  A dark graphite/navy console palette with one restrained signal-cyan
+  accent, used the way a SOC dashboard would use it — sparingly, for
+  things that matter (status, links, focus). Green and amber are reserved
+  for genuine status meaning, never decoration.
+*/
+
+:root {
+  /* Surfaces */
+  --color-bg: #0a0e14;
+  --color-bg-elevated: #0d131c;
+  --color-surface: #111926;
+  --color-surface-hover: #14202f;
+  --color-border: #1f2c3d;
+  --color-border-strong: #2a3b52;
+
+  /* Text */
+  --color-text-primary: #eef2f7;
+  --color-text-secondary: #93a3ba;
+  --color-text-muted: #64768f;
+
+  /* Accent (signal cyan) */
+  --color-accent: #4fd1e5;
+  --color-accent-strong: #7fe3f2;
+  --color-accent-dim: rgba(79, 209, 229, 0.12);
+  --color-accent-border: rgba(79, 209, 229, 0.32);
+
+  /* Status */
+  --color-positive: #4ade80;
+  --color-positive-dim: rgba(74, 222, 128, 0.12);
+  --color-warning: #f2b95c;
+  --color-warning-dim: rgba(242, 185, 92, 0.12);
+  --color-alert: #f2617a;
+  --color-alert-dim: rgba(242, 97, 122, 0.12);
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Manrope", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", "Manrope", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  /* Shadow / glow */
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 8px 24px rgba(2, 6, 12, 0.45);
+  --shadow-elevated: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 16px 40px rgba(2, 6, 12, 0.55);
+  --glow-accent: 0 0 0 1px var(--color-accent-border), 0 0 24px rgba(79, 209, 229, 0.08);
+
+  /* Layout */
+  --content-width: 1180px;
+  --header-height: 72px;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-standard: 260ms;
+}
+
+[data-theme="light"] {
+  --color-bg: #f6f8fb;
+  --color-bg-elevated: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-hover: #eef2f7;
+  --color-border: #dbe3ee;
+  --color-border-strong: #c3cedf;
+
+  --color-text-primary: #101826;
+  --color-text-secondary: #445269;
+  --color-text-muted: #6b7889;
+
+  --color-accent: #0f8fa8;
+  --color-accent-strong: #0b7387;
+  --color-accent-dim: rgba(15, 143, 168, 0.09);
+  --color-accent-border: rgba(15, 143, 168, 0.28);
+
+  --color-positive: #1f9d55;
+  --color-positive-dim: rgba(31, 157, 85, 0.1);
+  --color-warning: #b9791b;
+  --color-warning-dim: rgba(185, 121, 27, 0.1);
+  --color-alert: #cf3355;
+  --color-alert-dim: rgba(207, 51, 85, 0.1);
+
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 8px 24px rgba(20, 30, 50, 0.08);
+  --shadow-elevated: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 16px 40px rgba(20, 30, 50, 0.12);
+  --glow-accent: 0 0 0 1px var(--color-accent-border), 0 0 24px rgba(15, 143, 168, 0.06);
+}
