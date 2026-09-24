@@ -10,14 +10,14 @@ export default function About() {
           eyebrow="Profile"
           title="About"
           id="about-heading"
-          subtitle="A cybersecurity student building toward a career in security operations."
+         subtitle="Cybersecurity and web development specialist delivering secure and practical digital solutions."
         />
 
         <div className="about-grid">
           <p className="about-body">{profile.aboutSummary}</p>
 
           <div className="about-skills">
-            <h3 className="about-skills-title">Soft Skills</h3>
+            <h3 className="about-skills-title">Professional Strengths</h3>
             <ul className="about-skills-list">
               {profile.softSkills.map((skill) => (
                 <li key={skill}>{skill}</li>

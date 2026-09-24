@@ -15,10 +15,10 @@ export default function Focus() {
     <section className="section section-alt" aria-labelledby="focus-heading">
       <div className="container">
         <SectionHeading
-          eyebrow="Career Focus"
-          title="Where I'm building depth"
+          eyebrow="Professional Services"
+          title="Technical Solutions & Services"
           id="focus-heading"
-          subtitle="Security operations and networking are the primary target. Software development is a complementary strength."
+          subtitle="Delivering cybersecurity, network, and web development solutions designed for practical business needs."
         />
 
         <div className="focus-grid">

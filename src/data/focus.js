@@ -3,28 +3,31 @@ export const focusAreas = [
     id: "security-operations",
     title: "Security Operations",
     description:
-      "Learning alert triage, security monitoring concepts, structured investigation, and incident documentation.",
+      "Security monitoring, alert analysis, threat investigation, and structured incident handling to support secure digital environments.",
     primary: true,
   },
+
   {
     id: "incident-response",
     title: "Incident Response",
     description:
-      "Developing knowledge of detection, analysis, evidence handling, containment reasoning, and post-incident workflows.",
+      "Analyzing security events, investigating incidents, documenting findings, and supporting response workflows.",
     primary: true,
   },
+
   {
     id: "networking-security",
-    title: "Networking & Network Security",
+    title: "Network Security Solutions",
     description:
-      "Hands-on work with TCP/IP, routing, VLANs, subnetting, NAT, DNS, DHCP, and network troubleshooting.",
+      "Network configuration, troubleshooting, TCP/IP analysis, routing, VLANs, DNS, DHCP, and infrastructure security practices.",
     primary: true,
   },
+
   {
     id: "technical-development",
-    title: "Technical Development",
+    title: "Secure Web Development",
     description:
-      "Building software projects to strengthen programming, automation thinking, architecture, and technical problem solving.",
+      "Building modern React-based web applications with responsive interfaces and security-focused development practices.",
     primary: false,
   },
 ];

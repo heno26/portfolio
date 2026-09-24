@@ -8,10 +8,9 @@ export default function Skills() {
     <section id="skills" className="section" aria-labelledby="skills-heading">
       <div className="container">
         <SectionHeading
-          eyebrow="Technical Skills"
-          title="Skills & Tools"
-          id="skills-heading"
-          subtitle="Grouped by area, not scored — tools tagged “Learning / Labs” are actively being built up through coursework and hands-on practice rather than production use."
+          eyebrow="Technical Capabilities"
+          title="Skills & Solutions"
+          subtitle="Technologies and capabilities used to build secure systems, analyze infrastructure, and deliver reliable digital solutions."
         />
 
         <div className="skills-grid">
